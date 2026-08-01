@@ -1,198 +1,29 @@
 [
   {
-    "hotkey": "refunded1",
-    "category": "💰 DEPOSIT",
-    "subcat": "👋 Opening Deposit Concern",
-    "when": "Receipt shows the payment has been AUTO REFUNDED to the customer.",
-    "script": "Hello sir/ma'am, we have checked your deposit concern. Please note that the amount has already been refunded to your bank account, which is why it did not reflect in your YONO777 account. Kindly check your bank statement to confirm the refund. Thank you for your understanding!"
+    "id": 1,
+    "category": "General",
+    "subcategory": "Greeting",
+    "hotkey": "welcome1",
+    "title": "Welcome Message",
+    "description": "Standard greeting for members.",
+    "script": "Hello! Welcome to YD05 Customer Support. How may I assist you today?"
   },
   {
-    "hotkey": "refunded2",
-    "category": "💰 DEPOSIT",
-    "subcat": "👋 Opening Deposit Concern",
-    "when": "Customer continues to ask after being informed about the AUTO REFUND.",
-    "script": "We understand your concern, and we’ve double checked the transaction on our end. The amount has already been successfully refunded to your bank account, which is why it did not credit to your YONO777 account. At this point, we kindly ask you to coordinate with your bank and review your statement, as the funds are no longer with us. Thank you!"
+    "id": 2,
+    "category": "Withdrawal",
+    "subcategory": "Status Tracking",
+    "hotkey": "order2",
+    "title": "Withdrawal Order Number",
+    "description": "Ask the member for their withdrawal order number.",
+    "script": "Kindly provide your withdrawal order number so we can check its status."
   },
   {
-    "hotkey": "bann3",
-    "category": "👤 ACCOUNT",
-    "subcat": "-",
-    "when": "Account temporarily banned due to creating multiple incomplete deposit orders.",
-    "script": "Hello, your account has been temporarily banned due to policy violations. Our system detected that multiple deposit orders were created without completing the corresponding payments, despite several reminders.\n\nThis behavior triggers security checks, as it may appear suspicious or automated. Repeated incomplete deposit orders can impact account status and functionality.\n\nOnce your account activity returns to normal, the system will restore your account access. Thank you for your understanding and cooperation."
-  },
-  {
-    "hotkey": "bann4",
-    "category": "👤 ACCOUNT",
-    "subcat": "-",
-    "when": "Customer continues to inquire regarding temporary account ban for incomplete deposits.",
-    "script": "We regret to inform you that because you continued creating multiple order numbers despite previous reminders, Yono777 has decided to permanently ban your account. Unfortunately, we are unable to provide further assistance regarding this matter at this time.\n\nTo avoid the risk of permanent account suspension in the future, please make sure to follow the game rules and platform policies accordingly."
-  },
-  {
-    "hotkey": "bankedit1",
-    "category": "🏦 BANK",
-    "subcat": "🔄 Change / Add / Delete Bank",
-    "when": "Verification requested for newly updated bank details before enabling withdrawals.",
-    "script": "Upon checking, you recently updated your bank details. For security purposes, we need to verify the account before activating your withdrawal function.\n\nPlease provide a clear copy of your bank statement or passbook showing your name, IFSC, and account number so we can proceed with verification and enable your withdrawal account. Thank you for your cooperation."
-  },
-  {
-    "hotkey": "bankedit2",
-    "category": "🏦 BANK",
-    "subcat": "🔄 Change / Add / Delete Bank",
-    "when": "Newly updated bank details successfully verified and withdrawal function enabled.",
-    "script": "Thank you for providing the required details. We have successfully verified your newly linked bank account, and you may now proceed with your withdrawal. Thank you, and we wish you winning!"
-  },
-  {
-    "hotkey": "fail1",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🔴 Failed Status (Red / Fail1)",
-    "when": "System Automatically Returns Failed Withdrawal Amount to Balance",
-    "script": "Sir/Ma’am, kindly be informed that when a withdrawal fails because of an error, the system instantly and automatically returns the amount back to your account."
-  },
-  {
-    "hotkey": "fail2",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🔴 Failed Status (Red / Fail1)",
-    "when": "Customer Unable to See Returned Withdrawal Funds in Balance",
-    "script": "Any failed withdrawal is automatically returned to your balance. The amount goes directly back into your balance, which is why some users don’t notice it immediately."
-  },
-  {
-    "hotkey": "fail3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🔴 Failed Status (Red / Fail1)",
-    "when": "Customer Disputing Balance Used in Betting History",
-    "script": "If you recently placed any bets, part of the returned amount may have been used already. Kindly review your recent betting and balance history. Rest assured the amount has been returned."
-  },
-  {
-    "hotkey": "fake4",
-    "category": "💰 DEPOSIT",
-    "subcat": "🚫 Fake / Tampered Receipts",
-    "when": "Submitted receipt confirmed FAKE by bank representative.",
-    "script": "Upon checking with our bank representative, the receipt image you provided has been confirmed as fake. Please refrain from sending fake or altered receipt images, as this may lead to serious consequences, including the suspension or permanent ban of your account. Kindly ensure that only valid and genuine documents are submitted for verification."
-  },
-  {
-    "hotkey": "fake5",
-    "category": "💰 DEPOSIT",
-    "subcat": "🚫 Fake / Tampered Receipts",
-    "when": "Receipt confirmed TAMPERED/EDITED; submitting fake documents violates account policies.",
-    "script": "It appears that the receipt you submitted has been tampered with or edited. Submitting fake receipts is a serious violation of our policies.\n\nIf this behavior continues, your account may be permanently banned. We take account integrity and security very seriously, and we urge you to refrain from any further misuse."
-  },
-  {
-    "hotkey": "tgu1",
-    "category": "💰 DEPOSIT",
-    "subcat": "📄 PDF Deposit Cases (48hrs+ / Telegram Support)",
-    "when": "Request customer to send TELEGRAM USERNAME to process the issue.",
-    "script": "Hello, ma'am/sir. I understand that you're unable to send a message to our Telegram account. To assist you more quickly, kindly provide your Telegram username and wait for a message from our team. Thank you."
-  },
-  {
-    "hotkey": "tgu2",
-    "category": "💰 DEPOSIT",
-    "subcat": "📄 PDF Deposit Cases (48hrs+ / Telegram Support)",
-    "when": "Inform customer that TG username was ALREADY SENT to PDF-Staff.",
-    "script": "We have forwarded your username to our Telegram customer service team. Please check your Telegram messages for further assistance. Thank you."
-  },
-  {
-    "hotkey": "un3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🏦 Wrong Bank / Bind / Same Bank",
-    "when": "Unable to remove UNSUPPORTED BANK details due to VIP 0 level.",
-    "script": "Upon checking, we found that your account has an unsupported bank account linked. However, since your current VIP level is at 0, we are unable to remove or modify your linked bank details at this time. Kindly upgrade your VIP level first, then contact us again so we can assist you with removing the unsupported bank account. Thank you for your understanding!"
-  },
-  {
-    "hotkey": "credited4",
-    "category": "💰 DEPOSIT",
-    "subcat": "✅ Deposit Successful / Credited",
-    "when": "UTR deposit receipt has ALREADY BEEN CREDITED to a different Yono777 account.",
-    "script": "After a thorough check of our system, we confirm that this UTR deposit receipt has already been successfully credited to a different Yono777 account. As per our policy, a deposit can only be credited once and cannot be used again."
-  },
-  {
-    "hotkey": "scs1",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Confirm withdrawal successfully transferred to bank; allow up to 24 hours to reflect.",
-    "script": "Dear Member, we're pleased to inform you that your withdrawal has been successfully transferred to your bank. Please allow up to 24 hours from the time you receive this notification for the funds to reflect in your account. Thank you for your patience and for trusting us."
-  },
-  {
-    "hotkey": "scs2",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Follow-up: apologize for delay, assure team is closely monitoring and coordinating with bank.",
-    "script": "We completely understand how delays can be both frustrating and inconvenient. Please accept our heartfelt apologies for any disruption this may have caused. Rest assured, we are actively monitoring the status of your request and are working closely with the bank."
-  },
-  {
-    "hotkey": "scs3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Follow-up: clarify 24-hour timer starts from notification; ask for PDF bank statement if still not received.",
-    "script": "After verification, your withdrawal has been successfully transferred to your bank. Please note that the 24-hour processing time starts from the moment you receive this successful withdrawal notification to reach the account. If you do not receive the funds within this period, please reach out to us and provide a PDF copy of your bank statement so we can assist you further. We appreciate your patience as we ensure a smooth transaction."
-  },
-  {
-    "hotkey": "disbursed4",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Confirm system shows funds transferred; ask to wait and provide PDF statement if still missing after 24hrs.",
-    "script": "Upon confirmation in our system, your withdrawal has been transferred to your bank already. All we need to do is to wait patiently and if you still didn't received your funds within 24 hours, kindly contact us back and provide a PDF file of your bank statement."
-  },
-  {
-    "hotkey": "disbursed1",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Explain delay may be on bank's end since funds were already sent from YONO777's side.",
-    "script": "There may be a delay in the processing of the transaction by your bank. While we have completed our part by sending the funds, the final processing and crediting of the amount to your bank account are subject to the procedures and timelines of your bank."
-  },
-  {
-    "hotkey": "disbursed2",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Apologize for delay; explain typical resolution window of 24 hours.",
-    "script": "We understand that this delay may be inconvenient, and we sincerely apologize for any inconvenience it may cause. Unfortunately, we do not have control over the processing times of individual banks. However, based on our experience, such delays typically resolve within 24 hours."
-  },
-  {
-    "hotkey": "disbursed3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Recommend customer contact their bank directly with the UTR number for status inquiry.",
-    "script": "We recommend reaching out to your bank directly and provide them the UTR number that we give to inquire about the status of the transaction and any potential reasons for the delay."
-  },
-  {
-    "hotkey": "disbursed5",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🟢 Disbursed / Successful (Green)",
-    "when": "Reassure customer to contact CS again if funds not received within 24 hours; apologize for delay.",
-    "script": "Don't worry if you don't get your successful withdrawal money within 24 hours, kindly contact customer service again, we will assure and assist you get your money, sir/ma'am. We're very sorry for the delay of your withdrawal and thank you for choosing Yono777!"
-  },
-  {
-    "hotkey": "ok2",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🚫 Withdrawal Disabled / Re-enabled",
-    "when": "Confirm VIP upgrade was successful and withdrawal is now unlocked; refresh/reopen app if still blocked.",
-    "script": "Congratulations on upgrading your VIP level! You have successfully unlocked the withdrawal function and can now proceed with your withdrawal requests. To access this feature, kindly refresh your account. If you're still unable to request a withdrawal, please close the app and reopen it."
-  },
-  {
-    "hotkey": "upgrade3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "⬆️ VIP Limits / Upgrade Required",
-    "when": "State remaining deposit amount needed to upgrade VIP and unlock withdrawals (edit amount & VIP level).",
-    "script": "You still need to reach the total deposit requirement of (₹000) to upgrade to next level. Once you complete the remaining amount, the system will automatically upgrade your VIP level and you can proceed to request withdrawals"
-  },
-  {
-    "hotkey": "agent3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "🏢 Agency / Aviator Specific",
-    "when": "Inform agent withdrawal disabled due to no deposit activity in 30 days; depositing re-enables it.",
-    "script": "Hello Agent, upon reviewing your account, we found that your withdrawal function is disabled due to no deposit activity in the past 30 days. To reopen your withdrawal access, you will need to make a deposit. Once the deposit is successfully completed, your withdrawal function will be re-enabled immediately."
-  },
-  {
-    "hotkey": "norefund3",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "❌ Cancel / Bank Error / No Refund",
-    "when": "Follow-up/closing: clarify any remaining issue lies with the receiving bank; close the chat.",
-    "script": "Any issue now lies solely with your receiving bank. The UTR number serves as your proof of payment. By contacting your bank and providing this number, you can get clarity on when the funds will be reflected in your account. We will now close this chat, as all details regarding your concern have been explained. Any further delay must be resolved directly with your bank. We appreciate your understanding. Have a great day!"
-  },
-  {
-    "hotkey": "yono2",
-    "category": "💸 WITHDRAWAL",
-    "subcat": "📄 PDF Withdrawal Cases (48hrs+)",
-    "when": "Withdrawal order number provided does not belong to YONO777.",
-    "script": "Upon review, the order number you provided does not match Yono777. For assistance with a Yono777 withdrawal issue, please provide the correct order number, and I'll be happy to help. Thank you!"
+    "id": 3,
+    "category": "Deposit",
+    "subcategory": "UTR",
+    "hotkey": "utr1",
+    "title": "Request UTR Number",
+    "description": "Ask the member to provide the UTR number.",
+    "script": "Kindly provide your UTR number together with the payment receipt for verification."
   }
 ]
