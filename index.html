@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>YD05 Hotkeys</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YD05 Knowledge Base</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
+    <header class="app-header">
+        <div class="header-content">
+            <h1>YD05 Knowledge Base</h1>
+            <div class="meta-stats">
+                <span id="total-scripts-count"><i class="fa-solid fa-file-lines"></i> Loading scripts...</span>
+                <span id="last-updated"><i class="fa-solid fa-clock"></i> Updated: July 28, 2026</span>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button id="dark-mode-toggle" title="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+    <main class="app-container">
+        <section class="controls-section">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Search... (Press Ctrl + K)">
+                <span class="shortcut-badge">Ctrl+K</span>
+            </div>
+            <div class="category-filters" id="category-filters"></div>
+        </section>
+        <div class="content-layout">
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3><i class="fa-solid fa-fire"></i> Recent</h3>
+                    <div id="recent-list" class="mini-list">
+                        <p class="empty-notice">No recent scripts</p>
+                    </div>
+                </div>
+                <div class="sidebar-card">
+                    <h3><i class="fa-solid fa-heart"></i> Favorites</h3>
+                    <div id="favorites-list" class="mini-list">
+                        <p class="empty-notice">No favorites added</p>
+                    </div>
+                </div>
+            </aside>
+            <section class="catalog-section" id="catalog-section">
+                <div class="loading-state">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Loading knowledge base...
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
