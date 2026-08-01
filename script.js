@@ -128,6 +128,9 @@ function toggleFavorite(hotkey) {
 function toggleExpand(hotkey) {
     const card = document.getElementById(`card-${hotkey}`);
     card.classList.toggle('expanded');
+    const btn = card.querySelector('.action-btn:last-child');
+    const isExpanded = card.classList.contains('expanded');
+    btn.innerHTML = `<i class="fa-solid fa-chevron-${isExpanded ? 'up' : 'down'}"></i> ${isExpanded ? 'Collapse' : 'Expand'}`;
 }
 
 function renderSidebarLists() {
